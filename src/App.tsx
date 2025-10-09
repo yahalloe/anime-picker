@@ -182,7 +182,7 @@ function App() {
             {jikanData.type ?? "Unknown"} • {jikanData.episodes ?? "?"} eps • ⭐{" "}
             {jikanData.score ?? "N/A"}
           </p>
-          <p className="text-sm text-zinc-400 mb-6 italic">
+          <p className="text-sm text-zinc-400 mb-6">
             Status: {currentAnime.status || "N/A"}
           </p>
         </div>
@@ -197,10 +197,11 @@ function App() {
         <button
           title="Dislike"
           onClick={() => handleChoice("disliked")}
-          className="relative py-3 px-5 text-lg font-medium bg-neutral-800 rounded-lg
+          className="relative flex items-center justify-center w-14 h-14 
+             bg-neutral-800 rounded-full
              hover:bg-neutral-700 active:translate-y-[2px] active:shadow-inner transition
-             before:absolute before:inset-0 before:rounded-lg before:border-t before:border-white/15
-             after:absolute after:inset-0 after:rounded-lg after:border-b after:border-black/40
+             before:absolute before:inset-0 before:rounded-full before:border-t before:border-white/15
+             after:absolute after:inset-0 after:rounded-full after:border-b after:border-black/40
              shadow-[0_8px_20px_rgba(0,0,0,0.5),0_2px_6px_rgba(0,0,0,0.3)]
              overflow-hidden"
         >
@@ -223,10 +224,11 @@ function App() {
         <button
           title="like"
           onClick={() => handleChoice("liked")}
-          className="relative py-3 px-5 text-lg font-medium bg-neutral-800 rounded-lg
+          className="relative flex items-center justify-center w-14 h-14 
+             bg-neutral-800 rounded-full
              hover:bg-neutral-700 active:translate-y-[2px] active:shadow-inner transition
-             before:absolute before:inset-0 before:rounded-lg before:border-t before:border-white/15
-             after:absolute after:inset-0 after:rounded-lg after:border-b after:border-black/40
+             before:absolute before:inset-0 before:rounded-full before:border-t before:border-white/15
+             after:absolute after:inset-0 after:rounded-full after:border-b after:border-black/40
              shadow-[0_8px_20px_rgba(0,0,0,0.5),0_2px_6px_rgba(0,0,0,0.3)]
              overflow-hidden"
         >
