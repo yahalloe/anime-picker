@@ -33,6 +33,8 @@ function shuffleArray<T>(array: T[]): T[] {
   return arr;
 }
 
+//TODO: Add about page to explain the app and its purpose
+
 function App() {
   const [animeList, setAnimeList] = useState<AnimeXml[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -256,8 +258,9 @@ function App() {
       </div>
 
       {/* ❤️ Liked shows section */}
-      <h2 className="text-2xl font-semibold mb-4 text-center">Liked Animes</h2>
       {likedShows.length > 0 && (
+      <>
+      <h2 className="text-2xl font-semibold mb-4 text-center">Liked Animes</h2>
         <div className="w-full flex justify-center">
           <div className="w-full max-w-xs mb-10 lg:max-w-5xl rounded-xl p-6 shadow-lg border border-white/10 bg-zinc-950 highlight-white/90">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -283,6 +286,7 @@ function App() {
             </div>
           </div>
         </div>
+      </>
       )}
     </div>
   );
