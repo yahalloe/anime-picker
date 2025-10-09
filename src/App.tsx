@@ -37,7 +37,7 @@ function App() {
   const [animeList, setAnimeList] = useState<AnimeXml[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [jikanData, setJikanData] = useState<JikanAnime | null>(null);
-  const [choices, setChoices] = useState<Record<string, "liked" | "disliked">>(
+  const [_choices, setChoices] = useState<Record<string, "liked" | "disliked">>(
     {}
   );
   const [likedShows, setLikedShows] = useState<JikanAnime[]>([]);
