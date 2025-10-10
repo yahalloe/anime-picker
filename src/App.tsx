@@ -193,7 +193,7 @@ function App() {
       )}
 
       {/* Action Buttons */}
-      <div className="flex gap-6">
+      <div className="flex gap-20">
         <button
           title="Dislike"
           onClick={() => handleChoice("disliked")}
